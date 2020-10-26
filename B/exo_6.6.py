@@ -13,7 +13,7 @@ def draw(p, y, col):
         plot(p[0]+array([0,y[i]*cos(p[2]+i*pi/4)]),p[1]+array([0,y[i]*sin(p[2]+i*pi/4)]),color=col)
     plt.xlim([-2, 10])
     plt.ylim([-2, 10])
-    plt.show()
+    plt.show(block=False)
                 
         
 
@@ -55,7 +55,7 @@ draw(p0, y, 'red')
 pause(0.1)
 
 
-j0 = np.sum((y - f(p0))**2)
+j0 = np.linalg.norm(y.flatten() - f(p0))
 T = 5
 while T > 0.01:
     pe = p0 + T * np.random.randn(3, 1)
@@ -68,3 +68,5 @@ while T > 0.01:
         j0 = je
     T = 0.99 * T
     pause(0.00001)
+
+plt.show()

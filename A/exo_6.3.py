@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-@author: Matthieu Zins
-"""
 import numpy as np
 
 U = np.array([4, 10, 10, 13, 15], dtype=float)

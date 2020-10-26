@@ -11,8 +11,8 @@ M = np.array([[1, 0, -1, 1],
 y = np.array([-2, 3, 7, 11, 16, 36], dtype=float)
 
 print("rank M ", np.linalg.matrix_rank(M))
-# p_hat = np.linalg.inv(M.T @ M) @ M.T @ y # erreur M est de rang 3 donc M.T@M n'est pas inversible.^
-# les entrées données ne permettent pas d'estimer les paramètres.
+# p_hat = np.linalg.inv(M.T @ M) @ M.T @ y # erreur M est de rang 3 donc M.T@M n'est pas inversible.
+# Les entrées données ne permettent pas d'estimer les paramètres.
 
 # autres entrées
 M = np.array([[1, 0, -1, -2],

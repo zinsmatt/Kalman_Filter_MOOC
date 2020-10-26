@@ -5,8 +5,10 @@ import numpy as np
 # 1)
 P = 2 * np.random.rand(1000, 2)
 
-y = np.array([0,1,2.5,4.1,5.8,7.5])
-epsilon = 1
+y = np.array([0,1,2.65,4.885,7.646, 10.882])
+
+
+epsilon = 0.5
 goods = []
 bads = []
 
@@ -40,16 +42,18 @@ if len(bads):
     bads = np.vstack(bads)
     plt.scatter(bads[:, 0], bads[:, 1], color="blue")
 
-        
 
-# 2)
+
+# 2) 
+# Transfer function
 # g(z) = (10*z+b*(1+10*a)-10) / ((10*z-9)*(z-1))
 
 
 # 3)
+# Ensemble des solutions pour lesquelles le comportement du système reste le même.
+# Cet ensemble coincide bien avec les solutions trouvées à la question 1)
 a = np.linspace(0, 2, 100)
 b = 7.5 / (1 + 10 * a)
-plt.figure()
-plt.scatter(a, b)
-
-
+plt.plot(a, b, c="green")
+plt.ylim([0, 2.2])
+plt.show()

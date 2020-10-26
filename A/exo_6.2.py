@@ -1,4 +1,4 @@
-from roblib import *  # available at https://www.ensta-bretagne.fr/jaulin/roblib.py
+from roblib import *
 
 pv = array([[sqrt(2)],[-1],[1]])
 
