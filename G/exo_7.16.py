@@ -59,6 +59,5 @@ for ti, t in enumerate(arange(0,10,dt)):
         
     α=mvnrnd1(Γα)
     x = x + dt*f(x,u)+α  
-    
-    plt.savefig("out/img_%04d.png" % ti)
+
     

@@ -21,3 +21,10 @@ A robot is localized and tracked from two noisy radars using an EKF.
 An inverse pendulum is regularized using an EKF for state observation.
 
 ![Inverse Pendulum](doc/inverse_pendulum.gif)
+
+
+### **Simultaneous Localization and Mapping (SLAM) with KF** for Underwater Robot
+
+A Kalman filter is used to predict the robot position and correct it by detecting seamarks. At the end a backward pass, is used to further refine the seamarks and the robot positions.
+
+![SLAM](doc/slam.gif)
